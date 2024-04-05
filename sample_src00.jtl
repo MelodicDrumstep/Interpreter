@@ -1,0 +1,29 @@
+int ptr ptr m;
+
+proc main() {
+  int n = read_int();
+  write_int(n);
+  write_char(10);
+  int ptr s = &n;
+  *s = 4;
+  s = &m;
+  *s = 9;
+  write_int(n);
+  write_char(10);
+  write_int(m);
+  write_char(10);
+  write_int(s);
+  write_char(10);
+  int ref a = n;
+  int ptr ptr ref b = m;
+  a = 100;
+  b = 900;
+  write_int(!a + 3);
+  write_char(10);
+  write_int(n + 2 <= 4);
+  write_char(10);
+  write_int(b); 
+  write_char(10);
+  write_int(m);
+  write_char(10)
+}

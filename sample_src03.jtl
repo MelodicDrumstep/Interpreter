@@ -1,0 +1,14 @@
+func int abs(int n) {
+  if (n >= 0)
+  then {
+    __return = n + 1
+  }
+  else {
+    __return = - n
+  }
+};
+
+proc main() {
+  write_int(1 + abs(abs(read_int())));
+  write_char(10)
+}

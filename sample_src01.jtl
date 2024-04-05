@@ -1,0 +1,46 @@
+func int test_prime(int ref n) {
+  int i;
+  int flag;
+  i = 2;
+  flag = 1;
+  write_int(i * i);
+  write_char(10);
+  write_int(n);
+  write_char(10);
+  while (i * i <= n) do {
+    if (n % i == 0)
+    then { flag = 0; break}
+    else { flag = 1 };
+    i = i + 1;
+    write_int(i);
+    write_char(10)
+  };
+  n = 100;
+  __return = flag
+}
+
+;
+
+proc main() {
+  int n = read_int();
+  if (test_prime(n))
+  then {
+    write_char(80);
+    write_char(82);
+    write_char(73);
+    write_char(77);
+    write_char(69);
+    write_char(10)
+  }
+  else {
+    write_char(78);
+    write_char(79);
+    write_char(78);
+    write_char(80);
+    write_char(82);
+    write_char(73);
+    write_char(77);
+    write_char(69);
+    write_char(10)
+  }
+}

@@ -1,0 +1,24 @@
+
+proc p(int ref b, int ptr a)
+{
+    *a = 200;
+    a = 100;
+    write_int(b);
+    write_char(10);
+    b = 300;
+    write_int(b);
+    write_char(10)
+};
+
+proc main()
+{
+    int b;
+    b = 1;
+    write_int(b);
+    write_char(10);
+    p(b, &b);
+    write_int(b);
+    write_char(10);
+    write_int(a);
+    write_char(10)
+}

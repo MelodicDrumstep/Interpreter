@@ -1,0 +1,16 @@
+proc main()
+{
+    for
+    {
+        int i = 0
+    }
+    (i < 1)
+    {
+        write_int(i);
+        write_char(10);
+        continue
+    }
+    {
+        i = i + 1
+    }
+}
