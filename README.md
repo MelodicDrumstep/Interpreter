@@ -20,7 +20,7 @@ E :: =
        !E | *E | &E | FUNC_NAME(E, E, ..., E)
 C ::  =
         int V|
-	    int ptr V|
+	int ptr V|
         int ptr ... ptr V| //可以有指针类型
         (I call them type V below)
         type V = E|
